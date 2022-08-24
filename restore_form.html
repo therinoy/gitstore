@@ -1,0 +1,233 @@
+<html>
+    <head>
+        <title>test javascript</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <form id="submit-form" method="post" action="" role="form">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <label for="firstname">ชื่อ :</label>
+                          <input type="text" id="firstname" name="firstname">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <label for="lastname">นามสกุล :</label>
+                          <input type="text" id="lastname" name="lastname">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <label for="phone">โทรศัพท์ :</label>
+                          <input type="text" id="phone" name="phone">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <label for="email">อีเมล์ :</label>
+                          <input type="email" id="email" name="email">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="school">Select institute:</label>
+                            <select id="school" name="school" class="form-control">
+                              <option value="sciences">Science</option>
+                              <option value="soctech">Social Technology</option>
+                              <option value="agritech">Agricultural Technology</option>
+                              <option value="medicine">Medicine</option>
+                              <option value="nursing">Nursing</option>
+                              <option value="engineering">Engineering</option>
+                              <option value="dentistry">Dentistry</option>
+                              <option value="publichealth">Public Health</option>
+                              <option value="digitalarts">Digital Arts</option>
+                              <option value="other">Other</option>
+                              <option value="all" selected>All</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <div id="sciences">
+                              <select id="sciences" name="sciences" class="form-control">
+                                <option value="1">Chemistry</option>
+                                <option value="2">Mathematics</option>
+                                <option value="3">Biology</option>
+                                <option value="4">Physics</option>
+                                <option value="5">Geoinformatics</option>
+                                <option value="6">Preclinic</option>
+                                <option value="7">Sports Science</option>
+                              </select>
+                            </div>
+                            <div id="soctech">
+                              <select id="soctech" name="soctech" class="form-control">
+                                <option value="1">General Education</option>
+                                <option value="2">Foreign Languages</option>
+                                <option value="3">Information Technology</option>
+                                <option value="4">Management Technology</option>
+                              </select>
+                            </div>
+                            <div id="agritech">
+                              <select id="agritech" name="agritech" class="form-control">
+                                <option value="1">Crop Production Technology</option>
+                                <option value="2">Animal Production Technology</option>
+                                <option value="3">Biotechnology</option>
+                                <option value="4">Food Technology</option>
+                              </select>
+                            </div>
+                            <div id="engineering">
+                              <select id="engineering" name="engineering" class="form-control">
+                                <option value="1">Agricultural Engineering</option>
+                                <option value="2">Transportation Engineering</option>
+                                <option value="3">Computer Engineering</option>
+                                <option value="4">Chemical Engineering</option>
+                                <option value="1">Mechanical Engineering</option>
+                                <option value="2">Ceramic Engineering</option>
+                                <option value="3">Telecommunication Engineering</option>
+                                <option value="4">Polymer Engineering</option>
+                                <option value="1">Electrical Engineering</option>
+                                <option value="2">Civil Engineering</option>
+                                <option value="3">Metallurgical Engineering</option>
+                                <option value="4">Environmental Engineering</option>
+                                <option value="1">Industrial Engineering</option>
+                                <option value="2">Geotechnology</option>
+                                <option value="3">Manufacturing Engineering</option>
+                                <option value="4">Electronic Engineering</option>
+                                <option value="1">Material Innovation and Design Technology</option>
+                                <option value="2">Civil and Infrastructure Engineering</option>
+                                <option value="3">Precision Engineering</option>
+                                <option value="4">การบริหารงานก่อสร้างและสาธารนูปโภค</option>
+                                <option value="1">วิศวกรรมยานยนต์</option>
+                                <option value="2">วิศวกรรมอากาศยาน</option>
+                                <option value="3">แมคคาทรอนิกส์</option>
+                              </select>
+                            </div>
+                            <div id="publichealth">
+                                <select id="publichealth" name="publichealth" class="form-control">
+                                  <option value="1">Occupational Health and Safety</option>
+                                  <option value="2">Environmental Health</option>
+                                  <option value="3">โภชนวิทยาและการกำหนดอาหาร</option>
+                                </select>
+                            </div>
+                            <div id="digitalarts">
+                              <select id="digitalarts" name="digitalarts" class="form-control">
+                                <option value="1">เทคโนโลยีดิจิทัล</option>
+                                <option value="2">นิเทศศาสตร์ดิจิทัล</option>
+                              </select>
+                            </div>
+                            <div id="other">
+                              <input type='text' class='form-control' id='other' maxlength='200' minlength='1' value='Insert something...'>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <label for="platform">เว็บไซต์ :</label>
+                          <select id="platform" name="platform">
+                            <option value="elearning">e-Learning</option>
+                            <option value="xlane">X-Lane</option>
+                            <option value="onlineexam">Online Exam</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <label for="subject">รายวิชา :</label>
+                          <input type="text" id="subject" name="subject">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <label for="type">ประเภทข้อมูล :</label>
+                          <input type="radio" id="quiz" name="type" value="quiz">
+                          <label for="quiz">Quiz</label>
+                          <input type="radio" id="assign" name="type" value="assign">
+                          <label for="assign">Assign</label>
+                          <input type="radio" id="other" name="type" value="other">
+                          <label for="other">อื่น ๆ (โปรดระบุ)</label>
+                          <input type="text" name="type">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <label for="restoredate">วันที่ต้องการกู้ข้อมูล :</label>
+                          <p>(ย้อนหลังได้ไม่เกิน 1 ปี นับจากวันที่ขอกู้ข้อมูล)</p>
+                          <input type="date" id="restoredate" name="restoredate">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <label for="summary">ข้อมูลเพิ่มเติม :</label>
+                          <textarea id="summary" name="summary" style="height:100px"></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <input type="submit" class="btn btn-success btn-send" value="Search">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                toggleFields();
+                $("#school").change(function() {
+                    toggleFields();
+                });
+            });
+  
+            function toggleFields() {
+                if ($("#school").val() === "sciences") {
+                    $("#sciences").show();
+                } else {
+                    $("#sciences").hide();
+                }
+                if ($("#school").val() === "soctech") {
+                    $("#soctech").show();
+                } else {
+                    $("#soctech").hide();
+                }
+                if ($("#school").val() === "agritech") {
+                    $("#agritech").show();
+                } else {
+                    $("#agritech").hide();
+                }
+                if ($("#school").val() === "engineering") {
+                    $("#engineering").show();
+                } else {
+                    $("#engineering").hide();
+                }
+                if ($("#school").val() === "publichealth") {
+                    $("#publichealth").show();
+                } else {
+                    $("#publichealth").hide();
+                }
+                if ($("#school").val() === "digitalarts") {
+                    $("#digitalarts").show();
+                } else {
+                    $("#digitalarts").hide();
+                }
+                if ($("#school").val() === "other") {
+                    $("#other").show();
+                } else {
+                    $("#other").hide();
+                }
+            }
+        </script>
+    </body>
+</html>
